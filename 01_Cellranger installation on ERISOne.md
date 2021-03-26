@@ -19,3 +19,8 @@ cd /PHShome/tz949/yard/apps/cellranger-6.0.0
 export PATH=/PHShome/tz949/yard/apps/cellranger-6.0.0:$PATH
 which cellranger
 ```
+
+After each log off and log in, cellranger needs to be added to the PATH as follows:
+```
+export PATH=/PHShome/tz949/yard/apps/cellranger-6.0.0:$PATH
+```
