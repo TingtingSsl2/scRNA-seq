@@ -1,4 +1,4 @@
-To install Cellranger on ERISOne
+# To install Cellranger on ERISOne
 
 Prerequisites：
 - Open an ERISOne account.
