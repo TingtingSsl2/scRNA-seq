@@ -2,7 +2,7 @@ To install Cellranger on ERISOne
 
 Prerequisites：
 - Open an ERISOne account.
-- If on BWH camput, internet should be under Wifi name: phswifi3.
+- If on BWH campus, internet should under Wifi: phswifi3.
 - If WFH, set up VPN to connect to ERISOne. VPN set up see tutorial "BWH VPN set up".
 
 Once log onto ERISOne, follow the following codes. 
