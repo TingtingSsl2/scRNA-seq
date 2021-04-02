@@ -54,7 +54,7 @@ sequence and beyond are masked or removed from the FASTQ file". Wheras, UMI remo
 ## Commands on ERISOne:
 Input file: after downloading bcl files from Illumina Basespace, a series of files will be included in the downloaded file. One of them is **SampleSheet.csv**. Other files included are (based on different sequencing platforms, various file formats will be included, my data was sequenced using NextSeq550, here the output of NextSeq 550 is shown):
 
-![example](OutputFilesFromSequencing.png)
+![example2](OutputFilesFromSequencing.png)
 
 
 
