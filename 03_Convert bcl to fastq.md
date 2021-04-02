@@ -2,7 +2,7 @@
 
 snRNA-seq data is saved in bcl format, to convert it into fastq file format, two packages are required: cellranger and bcl2fastq2. 
 
-The conversion command is `cellranger mkfastq`. The FASTQ output generated will be the same as when running bcl2fastq directly. Cited from here [cellranger mkfastq and bcl2fastq2](https://janis.readthedocs.io/en/latest/tools/bioinformatics/cellranger/cellrangermkfastq.html)
+The conversion command is `cellranger mkfastq`. The FASTQ output generated will be the same as when running bcl2fastq directly. Cited from here: [cellranger mkfastq and bcl2fastq2](https://janis.readthedocs.io/en/latest/tools/bioinformatics/cellranger/cellrangermkfastq.html)
 
 
 
@@ -52,6 +52,12 @@ sequence and beyond are masked or removed from the FASTQ file". Wheras, UMI remo
 
 
 ## Commands on ERISOne:
+Input file: after downloading bcl files from Illumina Basespace, a series of files will be included in the downloaded file. One of them is **SampleSheet.csv**. Other files included are (based on different sequencing platforms, various file formats will be included, my data was sequenced using NextSeq550, here the output of NextSeq 550 is shown):
+
+![example2](OutputFilesFromSequencing.png)
+
+
+
 ```
 module load cellranger/3.0.2
 module load bcl2fastq2/2.19.1
