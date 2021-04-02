@@ -39,6 +39,7 @@ Depending on settings, the bcl2fastq2 Conversion Software trims adapter sequence
 **To think:**
 
 - How does the fastq file look like after bcl conversion?
+[sequence construct](http://nextgen.mgh.harvard.edu/CustomPrimer.html)
 ***
 
 ## Commands on ERISOne:
