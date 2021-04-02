@@ -78,7 +78,7 @@ For example, The default value of 0.9 (--adapter-stringency) indicates that only
 **Summary**
 
 - cellranger mkfastq or bcl2fastq converts bcl file into FASTQ file. 
-- after conversion, FASTQ files will be splitted into two parts: sample fastq and undetermined FASTQ.
+- after conversion, FASTQ files will be splitted into two parts: sample FASTQ and undetermined FASTQ.
 - samples are assigned based on the Index Adapter sequence. 
 - Places reads without a matching index adapter sequence in the Undetermined FASTQ file.
 - for any FASTQ file in the input, reads with > 90% sequence identity with the Adapter are trimmed. Sequenced Adapter sequences are modified to expected Adapter sequences.
