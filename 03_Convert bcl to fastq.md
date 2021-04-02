@@ -13,7 +13,7 @@ each read.
 The sample FASTQ files are compressed and appended with the *fastq.gz extension. Thus, per-cycle
 BCL files are converted into per-read FASTQ files that can be used as input for data analysis.
 
-*Demultiplexing Process
+*Demultiplexing Process*
 Multiplexing adds a unique index adapter sequence to each sample during library prep, generating uniquely
 tagged libraries that can be identified and sorted for analysis. Demultiplexing then assigns clusters to a
 sample based on the index adapter sequence of the cluster.
@@ -22,7 +22,7 @@ sample based on the index adapter sequence of the cluster.
 samples are not multiplexed, the software skips demultiplexing and assigns all clusters in a flow cell lane to
 one sample.
 
-*Adapter Trimming and UMI Removal
+*Adapter Trimming and UMI Removal*
 Depending on settings, the bcl2fastq2 Conversion Software trims adapter sequences and removes Unique
 Molecular Identifier (UMI) bases from reads:
 - Adapter trimming—The software determines whether a read extends past the DNA insert and into the
@@ -36,8 +36,8 @@ active, the software can also remove the bases from the reads.
 My understanding here is: Adapter trimming is performed as default setting if run cellranger mkfastq or bcl2fastq. In other words, "Base calls matching the adapter
 sequence and beyond are masked or removed from the FASTQ file". Wheras, UMI removal will be performed only if you give UMI trimming command.
 
-* To think: 
-* - How does the fastq file look like after bcl conversion?
+* To think: *
+- How does the fastq file look like after bcl conversion?
 
 
 To convert:
