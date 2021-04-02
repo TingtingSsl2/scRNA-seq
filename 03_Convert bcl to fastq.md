@@ -100,6 +100,8 @@ directory contains the files for multiple samples.
 **Reads with unidentified index adapters are recorded in one file named Undetermined_S0_.** If a sample sheet
 includes multiple samples without specified index adapters, the software displays a missing barcode error
 and ends the analysis.
+  
+**Behavioral Options** check on page 13 [bcl2fastq mannual](https://sapac.support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/bcl2fastq/bcl2fastq2-v2-20-software-guide-15051736-03.pdf)
 
 **Codes:**
 ```
