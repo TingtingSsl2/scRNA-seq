@@ -103,6 +103,8 @@ and ends the analysis.
   
 **Behavioral Options** check on page 13 [bcl2fastq mannual](https://sapac.support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/bcl2fastq/bcl2fastq2-v2-20-software-guide-15051736-03.pdf)
 
+For example, The default value of 0.9 (--adapter-stringency) indicates that only reads with > 90% sequence identity with the adapter are trimmed.
+
 **Codes:**
 ```
 module load cellranger/3.0.2
