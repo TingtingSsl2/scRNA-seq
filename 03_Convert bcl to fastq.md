@@ -5,7 +5,7 @@ snRNA-seq data is saved in bcl format, to convert it into fastq file format, two
 The conversion command is `cellranger mkfastq`. The FASTQ output generated will be the same as when running bcl2fastq directly. Cited from here [cellranger mkfastq and bcl2fastq2](https://janis.readthedocs.io/en/latest/tools/bioinformatics/cellranger/cellrangermkfastq.html)
 
 
-### How does bcl2fastq2 work?
+## How does bcl2fastq2 work?
 [bcl2fastq mannual](https://sapac.support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/bcl2fastq/bcl2fastq2-v2-20-software-guide-15051736-03.pdf)
 
 **BCL to FASTQ Conversion Process**
