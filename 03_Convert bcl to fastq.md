@@ -67,7 +67,7 @@ sequence and beyond are masked or removed from the FASTQ file". Wheras, UMI remo
 A sample sheet (SampleSheet.csv) records information about samples and the corresponding index
 adapters. The bcl2fastq2 Conversion Software uses this information to demultiplex and convert BCL files.
 For most runs, a sample sheet is optional. The default location is the root output folder, but you can use the
-command --sample-sheet to specify any CSV file in any location. When a sample sheet is not provided, the
+command `--sample-sheet` (bcl2fastq2, use `--csv=` to specify if using cellranger mkfastq) to specify any CSV file in any location. When a sample sheet is not provided, the
 software assigns all reads to the default sample Undertermined_S0.
 
 **Codes:**
