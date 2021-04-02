@@ -46,7 +46,7 @@ My understanding here is: Adapter trimming is performed as default setting if ru
 sequence and beyond are masked or removed from the FASTQ file". Wheras, UMI removal will be performed only if you give UMI trimming command.
 
 
-** To think: **
+**To think:**
 
 - How does the fastq file look like after bcl conversion?
 
