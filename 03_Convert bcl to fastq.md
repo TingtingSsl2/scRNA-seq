@@ -7,7 +7,7 @@ The conversion command is `cellranger mkfastq`. The FASTQ output generated will 
 
 
 ## How does bcl2fastq2 work?
-[bcl2fastq mannual](https://sapac.support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/bcl2fastq/bcl2fastq2-v2-20-software-guide-15051736-03.pdf)
+Reference: [bcl2fastq mannual](https://sapac.support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/bcl2fastq/bcl2fastq2-v2-20-software-guide-15051736-03.pdf)
 
 **BCL to FASTQ Conversion Process**
 
