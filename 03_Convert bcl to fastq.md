@@ -70,6 +70,19 @@ For most runs, a sample sheet is optional. The default location is the root outp
 command `--sample-sheet` (bcl2fastq2, use `--csv=` to specify if using cellranger mkfastq) to specify any CSV file in any location. When a sample sheet is not provided, the
 software assigns all reads to the default sample Undertermined_S0.
 
+**DemultiplexingScenarios**
+For each sample listed in a sample sheet, the software produces one FASTQ file for each sample for each
+read.
+- When a sample sheet contains multiplexed samples, the software:
+- **Places reads without a matching index adapter sequence in the Undetermined_S0 FASTQ file.**
+- Places reads with valid index adapter sequences in the sample FASTQ file.
+- When a sample sheet contains one unindexed sample, all reads are placed in the sample FASTQ files
+(one each for Read 1 and Read 2).
+- When a sample sheet does not exist, or exists but has no Data section, all reads are placed in one
+FASTQ file named Undetermined_S0.
+- When the Lane column in the Data section is not used, all lanes are converted. Otherwise, only
+populated lanes are converted.
+
 **Codes:**
 ```
 module load cellranger/3.0.2
