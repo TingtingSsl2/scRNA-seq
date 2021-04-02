@@ -90,8 +90,7 @@ identity with the adapter are trimmed.
 
 **FASTQ FilesDirectory**
 
-The software writes compressed, demultiplexed FASTQ files to the directory <run folder>\Data\Intensities\
-BaseCalls.
+The software writes compressed, demultiplexed FASTQ files to the directory <run folder>\Data\Intensities\BaseCalls.
 - If a sample sheet specifies the Sample_Project column for a sample, the software places the FASTQ files
 for that sample in the directory <run folder>\Data\Intensities\BaseCalls\<Project>. The same project
 directory contains the files for multiple samples.
