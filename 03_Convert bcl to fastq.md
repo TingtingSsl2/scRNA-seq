@@ -47,8 +47,9 @@ sequence and beyond are masked or removed from the FASTQ file.
 reaction (PCR) amplification. After the UMI is amplified with amplicons, the software can retrieve the
 bases and include them in the read name in the FASTQ files. When the TrimUMI sample sheet setting is
 active, the software can also remove the bases from the reads.
-My understanding here is: Adapter trimming is performed as default setting if run cellranger mkfastq or bcl2fastq. In other words, "Base calls matching the adapter
-sequence and beyond are masked or removed from the FASTQ file". Wheras, UMI removal will be performed only if you give UMI trimming command.
+
+(My understanding here is: Adapter trimming is performed as default setting if run cellranger mkfastq or bcl2fastq. In other words, "Base calls matching the adapter
+sequence and beyond are masked or removed from the FASTQ file". Wheras, UMI removal will be performed only if you give UMI trimming command.)
 
 ***
 **To think:**
