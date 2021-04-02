@@ -7,7 +7,7 @@ The conversion command is `cellranger mkfastq`. The FASTQ output generated will 
 ***
 **Questions before I start:**
 
-- How is Undetermined fastq files determined?
+- How are Undetermined fastq files determined?
 ***
 
 
