@@ -41,8 +41,8 @@ Depending on settings, the bcl2fastq2 Conversion Software trims adapter sequence
 Molecular Identifier (UMI) bases from reads:
 - Adapter trimming—The software determines whether a read extends past the DNA insert and into the
 sequencing adapter. An approximate string matching algorithm identifies all or part of the adapter
-sequence and treats inserts and deletions (indels) as one mismatch. Base calls matching the adapter
-sequence and beyond are masked or removed from the FASTQ file.
+sequence and treats inserts and deletions (indels) as one mismatch. **Base calls matching the adapter
+sequence and beyond are masked or removed from the FASTQ file.**
 - UMI removal—UMIs are random k-mers attached to the genomic DNA (gDNA) before polymerase chain
 reaction (PCR) amplification. After the UMI is amplified with amplicons, the software can retrieve the
 bases and include them in the read name in the FASTQ files. When the TrimUMI sample sheet setting is
