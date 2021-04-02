@@ -85,6 +85,22 @@ FASTQ file named Undetermined_S0.
 - When the Lane column in the Data section is not used, all lanes are converted. Otherwise, only
 populated lanes are converted.
 
+--adapter-stringency: The default value of 0.9 indicates that only reads with > 90% sequence
+identity with the adapter are trimmed.
+
+**FASTQ FilesDirectory**
+
+The software writes compressed, demultiplexed FASTQ files to the directory <run folder>\Data\Intensities\
+BaseCalls.
+- If a sample sheet specifies the Sample_Project column for a sample, the software places the FASTQ files
+for that sample in the directory <run folder>\Data\Intensities\BaseCalls\<Project>. The same project
+directory contains the files for multiple samples.
+- If the Sample_ID and Sample_Name columns are specified but do not match, the FASTQ files reside in a
+<SampleID> subdirectory where files use the Sample_Name value.
+**Reads with unidentified index adapters are recorded in one file named Undetermined_S0_.** If a sample sheet
+includes multiple samples without specified index adapters, the software displays a missing barcode error
+and ends the analysis.
+
 **Codes:**
 ```
 module load cellranger/3.0.2
