@@ -51,7 +51,7 @@ sequence and beyond are masked or removed from the FASTQ file". Wheras, UMI remo
 - How does the fastq file look like after bcl conversion?
 
 
-To convert:
+## Commands on ERISOne:
 ```
 module load cellranger/3.0.2
 module load bcl2fastq2/2.19.1
