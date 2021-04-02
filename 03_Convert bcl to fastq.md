@@ -63,7 +63,7 @@ sequence and beyond are masked or removed from the FASTQ file". Wheras, UMI remo
 ![example2](OutputFilesFromSequencing.png)
 
 
-**Sample Sheets**
+**Sample Sheets:**
 A sample sheet (SampleSheet.csv) records information about samples and the corresponding index
 adapters. The bcl2fastq2 Conversion Software uses this information to demultiplex and convert BCL files.
 For most runs, a sample sheet is optional. The default location is the root output folder, but you can use the
