@@ -71,6 +71,7 @@ command `--sample-sheet` (bcl2fastq2, use `--csv=` to specify if using cellrange
 software assigns all reads to the default sample Undertermined_S0.
 
 **DemultiplexingScenarios**
+
 For each sample listed in a sample sheet, the software produces one FASTQ file for each sample for each
 read.
 - When a sample sheet contains multiplexed samples, the software:
