@@ -9,3 +9,5 @@ Below is showing a **Ranked Barcode Plot**, obtained after running 10X Genomics 
 - The steep drop-off in plot seperates cell-associated barcodes (on the left of x-axis) and empty partitions (on the right of x-axis). 
 
 - Barcodes can be determined to be cell-associated based on their UMI count or by their RNA-profile. In other words, if there is enough UMI counts or RNAs associated with the barcode, this barcode is cell-associated. 
+
+[How to interpret the "Fraction Reads in Cells" metric?](https://kb.10xgenomics.com/hc/en-us/articles/360003919491-How-to-interpret-the-Fraction-Reads-in-Cells-metric-)
