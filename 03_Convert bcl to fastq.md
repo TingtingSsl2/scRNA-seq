@@ -14,7 +14,7 @@ The conversion command is `cellranger mkfastq`. The FASTQ output generated will 
 ## How does bcl2fastq2 work?
 Reference: [bcl2fastq mannual](https://sapac.support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/bcl2fastq/bcl2fastq2-v2-20-software-guide-15051736-03.pdf)
 
-**BCL to FASTQ Conversion Process**
+## BCL to FASTQ Conversion Process
 
 The software uses input files, which are the output of a sequencing run, to convert BCL files into FASTQ files. For each cluster that passes filter (PF), the software writes one entry to one FASTQ file for each sample in each read.
 - For a single-read run, the software creates one Read 1 FASTQ file per sample.
@@ -22,14 +22,14 @@ The software uses input files, which are the output of a sequencing run, to conv
 The sample FASTQ files are compressed and appended with the *fastq.gz extension. Thus, per-cycle BCL files are converted into per-read FASTQ files that can be used as input for data analysis.
 
 
-**Demultiplexing Process**
+## Demultiplexing Process**
 
 Multiplexing adds a unique index adapter sequence to each sample during library prep, generating uniquely tagged libraries that can be identified and sorted for analysis. Demultiplexing then assigns clusters to a sample based on the index adapter sequence of the cluster.
 - To optimize demultiplexing results, choose index adapters that optimize color balance when performing library prep. For more information, see the Index Adapters Pooling Guide.
 - The bcl2fastq2 Conversion Software demultiplexes multiplexed samples as part of the conversion process. If samples are not multiplexed, the software skips demultiplexing and assigns all clusters in a flow cell lane to one sample.
 
 
-**Adapter Trimming and UMI Removal**
+## Adapter Trimming and UMI Removal
 
 Depending on settings, the bcl2fastq2 Conversion Software trims adapter sequences and removes Unique Molecular Identifier (UMI) bases from reads:
 - Adapter trimming—The software determines whether a read extends past the DNA insert and into the sequencing adapter. An approximate string matching algorithm identifies all or part of the adapter sequence and treats inserts and deletions (indels) as one mismatch. **Base calls matching the adapter sequence and beyond are masked or removed from the FASTQ file.**
