@@ -21,4 +21,4 @@ https://www.reddit.com/r/bioinformatics/comments/n3ltnf/cellranger_aggr_vs_seura
 - The integration of data from multiple experiments, which we call data integration. (different experiment/conditions)
 - batch correction method: ComBat
 - data integration method: CCA, MNN, Scanorama, RISC, scGen, LIGER, BBKNN, Harmony. 
-- While data integration methods can also be applied to simple batch correction problems, 
+- While data integration methods can also be applied to simple batch correction problems.
