@@ -22,3 +22,18 @@ https://www.reddit.com/r/bioinformatics/comments/n3ltnf/cellranger_aggr_vs_seura
 - batch correction method: ComBat
 - data integration method: CCA, MNN, Scanorama, RISC, scGen, LIGER, BBKNN, Harmony. 
 - While data integration methods can also be applied to simple batch correction problems.
+
+# What's the difference between functions of ScaleData and SCTransform
+In Seurat V2, the standard pipeline is: NormalizeData(), FindVariableFeatures() and ScaleData(). Scaling is an essential step in the Seurat workflow, but only on genes that will be used as input to PCA. 
+```
+pbmc <- ScaleData(pbmc, vars.to.regress = "percent.mt")
+```
+Seurat V3 still has the ScaleData function, but new function SCTransform has replaced functions of NormalizeData(), FindVariableFeatures(), ScaleData(). During normalization, we can also remove confounding sources of variation.
+
+```
+pbmc <- SCTransform(pbmc, vars.to.regress = "percent.mt", verbose = FALSE)
+```
+
+
+
+
