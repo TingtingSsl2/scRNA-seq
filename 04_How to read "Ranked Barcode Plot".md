@@ -2,6 +2,10 @@
 Below is showing a **Ranked Barcode Plot**, obtained after running 10X Genomics Cellranger's `cellranger count` function. 
 ![example](RankedBarcodePlot.png)
 
+<p align="center">
+  <img width="50%" height="50%" src="RankedBarcodePlot.png">
+</p>
+
 - **y-axis**: number of UMI counts mapped to each barcode.
 
 - **x-axis**: number of barcodes below "that" UMI counts. 
