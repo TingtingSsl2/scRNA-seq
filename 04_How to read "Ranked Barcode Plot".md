@@ -1,6 +1,5 @@
 # How to read 10X Cellranger "Ranked Barcode Plot"
 Below is showing a **Ranked Barcode Plot**, obtained after running 10X Genomics Cellranger's `cellranger count` function. 
-![example](RankedBarcodePlot.png)
 
 <p align="center">
   <img width="50%" height="50%" src="RankedBarcodePlot.png">
