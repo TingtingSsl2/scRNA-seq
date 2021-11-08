@@ -7,7 +7,7 @@ Below is showing a **Ranked Barcode Plot**, obtained after running 10X Genomics 
 
 - **y-axis**: number of UMI counts mapped to each barcode.
 
-- **x-axis**: number of barcodes below "that" UMI counts. 
+- **x-axis**: rank ordered barcodes below "that" UMI counts. 
 
 - The steep drop-off in plot seperates cell-associated barcodes (on the left of x-axis) and empty partitions (on the right of x-axis). 
 
