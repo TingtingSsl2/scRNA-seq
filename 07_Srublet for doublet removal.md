@@ -93,7 +93,9 @@ np.savetxt("srublet.logic", predicted_doublets)
 
 **The 1st output figure is:**
 
-![DoubletScore.vs.ProbDensity](DoubletScore.vs.ProbDensity.png)
+<p align="center">
+  <img width="50%" height="50%" src="DoubletScore.vs.ProbDensity.png">
+</p>
 
 For DoubletScore.vs.ProbDensity plot of observed transcriptomes:
 
@@ -109,7 +111,9 @@ For DoubletScore.vs.ProbDensity plot of simulated doublets:
 
 **The 2nd output figure is:**
 
-![DoubletScoreUMAP](DoubletScoreUMAP.png)
+<p align="center">
+  <img width="50%" height="50%" src="DoubletScoreUMAP.png">
+</p>
 
 For DoubletScoreUMAP:
 
