@@ -10,7 +10,7 @@ To identify doublets from scRNA-seq data set, I followed the python pipeline pos
 
 ## Srublet paper overview and the algorithm:
 <p align="center">
-  <img width="50%" height="50%" src="SrubletPaper.jpg">
+  <img width="75%" height="75%" src="SrubletPaper.jpg">
 </p>
 
 **Notes**
@@ -94,7 +94,7 @@ np.savetxt("srublet.logic", predicted_doublets)
 **The 1st output figure is:**
 
 <p align="center">
-  <img width="50%" height="50%" src="DoubletScore.vs.ProbDensity.png">
+  <img width="75%" height="75%" src="DoubletScore.vs.ProbDensity.png">
 </p>
 
 For DoubletScore.vs.ProbDensity plot of observed transcriptomes:
@@ -112,7 +112,7 @@ For DoubletScore.vs.ProbDensity plot of simulated doublets:
 **The 2nd output figure is:**
 
 <p align="center">
-  <img width="50%" height="50%" src="DoubletScoreUMAP.png">
+  <img width="75%" height="75%" src="DoubletScoreUMAP.png">
 </p>
 
 For DoubletScoreUMAP:
