@@ -2,6 +2,10 @@
 
 Here is Srublet Github page: [Srublet Github](https://github.com/swolock/scrublet)
 
+Srublet analysis example can be found: [Srublet Example](https://github.com/swolock/scrublet/blob/master/examples/scrublet_basics.ipynb)
+
+Srublet analysis discussion can be found: [Srublet Discussion](https://github.com/swolock/scrublet/issues/3)
+
 To identify doublets from scRNA-seq data set, I followed the python pipeline posted on Srublet Github and did a few modifications. 
 
 - Filtered matrix from cellranger output was used as Srublet input.
