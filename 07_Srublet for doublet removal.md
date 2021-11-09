@@ -9,6 +9,10 @@ To identify doublets from scRNA-seq data set, I followed the python pipeline pos
 - Srublet output includes: on-screen printing results as mentioned in Srublet paper, two figures and two tables (one for doublet score, one binary file telling if a cell is doublet or not).
 
 ## Srublet paper overview and algorithm:
+<p align="center">
+  <img width="50%" height="50%" src="SrubletPaper.jpg">
+</p>
+
 ![SrubletPaper](SrubletPaper.jpg)
 
 **Notes**
