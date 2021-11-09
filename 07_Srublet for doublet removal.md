@@ -76,11 +76,9 @@ np.savetxt("srublet.logic", predicted_doublets)
 - Elapsed time: 8.8 seconds
 
 
-**The two output figures are:**
+**The 1st output figure is:**
 
 ![DoubletScore.vs.ProbDensity](DoubletScore.vs.ProbDensity.png)
-
-![DoubletScoreUMAP](DoubletScoreUMAP.png)
 
 For DoubletScore.vs.ProbDensity plot of observed transcriptomes:
 
@@ -93,6 +91,10 @@ For DoubletScore.vs.ProbDensity plot of simulated doublets:
 - The vertical bar is the detectable doublet fraction.
 - The left panel is showing cells that are Embbedded doublets.
 - The right panel is showing cells that are Neotypic doubles.
+
+**The 2nd output figure is:**
+
+![DoubletScoreUMAP](DoubletScoreUMAP.png)
 
 For DoubletScoreUMAP:
 
