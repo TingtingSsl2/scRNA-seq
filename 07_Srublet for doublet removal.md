@@ -8,7 +8,7 @@ To identify doublets from scRNA-seq data set, I followed the python pipeline pos
 - Run python scripts from termnial.
 - Srublet output includes: on-screen printing results as mentioned in Srublet paper, two figures and two tables (one for doublet score, one binary file telling if a cell is doublet or not).
 
-**Codes:**
+## Codes:
 ```
 python
 import scrublet as scr
@@ -53,15 +53,15 @@ plt.savefig("DoubletScoreUMAP.png")
 np.savetxt("srublet.score", doublet_scores)
 np.savetxt("srublet.logic", predicted_doublets)
 ```
-**Intepretation of the Srublet results**
+## Intepretation of the Srublet results
 
-The output described in Srublet paper includes:
+**The output described in Srublet paper includes:**
 - A predicted ‘‘detectable doublet fraction’’. This is the predicted fraction of doublets that are neotypic.
 - A ‘‘doublet score’’ for each observed transcriptome. This score is used for doublet classification, and it can also be interpreted as a posterior likelihood of a cell being a doublet when the fraction of doublets in the entire dataset is known.
 - A standard error on the doublet score. This error allows establishing confidence in the assignment of cells as doublets.
 - A binary label for each cell identifying neotypic doublets.
 
-The output prited on screen while running Srublet:
+**The output prited on screen while running Srublet:**
 
 - Preprocessing...
 - Simulating doublets...
@@ -76,7 +76,7 @@ The output prited on screen while running Srublet:
 - Elapsed time: 8.8 seconds
 
 
-The two output figures are:
+**The two output figures are:**
 ![DoubletScore.vs.ProbDensity](DoubletScore.vs.ProbDensity.png)
 ![DoubletScoreUMAP](DoubletScoreUMAP.png)
 
