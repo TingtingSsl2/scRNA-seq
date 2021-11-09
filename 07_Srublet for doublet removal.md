@@ -54,6 +54,7 @@ np.savetxt("srublet.score", doublet_scores)
 np.savetxt("srublet.logic", predicted_doublets)
 ```
 **Intepretation of the Srublet results**
+
 The output described in Srublet paper includes:
 - A predicted ‘‘detectable doublet fraction’’. This is the predicted fraction of doublets that are neotypic.
 - A ‘‘doublet score’’ for each observed transcriptome. This score is used for doublet classification, and it can also be interpreted as a posterior likelihood of a cell being a doublet when the fraction of doublets in the entire dataset is known.
@@ -62,17 +63,17 @@ The output described in Srublet paper includes:
 
 The output prited on screen while running Srublet:
 
-Preprocessing...
-Simulating doublets...
-Embedding transcriptomes using PCA...
-Calculating doublet scores...
-Automatically set threshold at doublet score = 0.68
-Detected doublet rate = 0.0%
-Estimated detectable doublet fraction = 0.1%
-Overall doublet rate:
-Expected   = 6.0%
-Estimated  = 0.0%
-Elapsed time: 8.8 seconds
+- Preprocessing...
+- Simulating doublets...
+- Embedding transcriptomes using PCA...
+- Calculating doublet scores...
+- Automatically set threshold at doublet score = 0.68
+- Detected doublet rate = 0.0%
+- Estimated detectable doublet fraction = 0.1%
+- Overall doublet rate:
+- Expected   = 6.0%
+- Estimated  = 0.0%
+- Elapsed time: 8.8 seconds
 
 
 The two output figures are:
