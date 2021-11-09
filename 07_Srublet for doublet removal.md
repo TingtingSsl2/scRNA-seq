@@ -3,6 +3,7 @@
 Here is Srublet Github page: [Srublet Github](https://github.com/swolock/scrublet)
 
 To identify doublets from scRNA-seq data set, I followed the python pipeline posted on Srublet Github and did a few modifications. 
+
 - Filtered matrix from cellranger output was used as Srublet input.
 - Run python scripts from termnial.
 - Srublet output includes: on-screen printing results as mentioned in Srublet paper, two figures and two tables (one for doublet score, one binary file telling if a cell is doublet or not).
@@ -60,6 +61,7 @@ The output described in Srublet paper includes:
 - A binary label for each cell identifying neotypic doublets.
 
 The output prited on screen while running Srublet:
+
 Preprocessing...
 Simulating doublets...
 Embedding transcriptomes using PCA...
@@ -71,6 +73,7 @@ Overall doublet rate:
 Expected   = 6.0%
 Estimated  = 0.0%
 Elapsed time: 8.8 seconds
+
 
 The two output figures are:
 ![DoubletScore.vs.ProbDensity](DoubletScore.vs.ProbDensity.png)
