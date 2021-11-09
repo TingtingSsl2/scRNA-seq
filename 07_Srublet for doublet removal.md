@@ -8,8 +8,10 @@ To identify doublets from scRNA-seq data set, I followed the python pipeline pos
 - Run python scripts from termnial.
 - Srublet output includes: on-screen printing results as mentioned in Srublet paper, two figures and two tables (one for doublet score, one binary file telling if a cell is doublet or not).
 
-## Srublet paper overview and algorithm:
-![SrubletPaper](SrubletPaper.jpg)
+## Srublet paper overview and the algorithm:
+<p align="center">
+  <img width="50%" height="50%" src="SrubletPaper.jpg">
+</p>
 
 **Notes**
 - Srublet paper defined two types of doublets: neotypic doublets and embedded doublets.
@@ -91,7 +93,9 @@ np.savetxt("srublet.logic", predicted_doublets)
 
 **The 1st output figure is:**
 
-![DoubletScore.vs.ProbDensity](DoubletScore.vs.ProbDensity.png)
+<p align="center">
+  <img width="50%" height="50%" src="DoubletScore.vs.ProbDensity.png">
+</p>
 
 For DoubletScore.vs.ProbDensity plot of observed transcriptomes:
 
@@ -107,12 +111,18 @@ For DoubletScore.vs.ProbDensity plot of simulated doublets:
 
 **The 2nd output figure is:**
 
-![DoubletScoreUMAP](DoubletScoreUMAP.png)
+<p align="center">
+  <img width="50%" height="50%" src="DoubletScoreUMAP.png">
+</p>
 
 For DoubletScoreUMAP:
 
 - The left panel is showing indentified doublets in data set (black dots are identified doublets, which is missing in my data set, can take a look in example pipeline given at the begining of this doc).
 - The right panel is showing doublet score of cells, in my case, there is no doublets but the cells are still colored, my data doublet score cutoff is 0.68.
+
+**Conclusion**
+
+Our data set has only embedded doublets, no detectable neotypic doublets.
 
 
 
