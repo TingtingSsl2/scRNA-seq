@@ -80,6 +80,26 @@ The two output figures are:
 ![DoubletScore.vs.ProbDensity](DoubletScore.vs.ProbDensity.png)
 ![DoubletScoreUMAP](DoubletScoreUMAP.png)
 
+For DoubletScore.vs.ProbDensity plot of observed transcriptomes:
+
+- The vertical bar is the cutoff of the doublet score.
+- The left panel is showing cells that are singlets.
+- The right panel is showing cells that are doublets.
+
+For DoubletScore.vs.ProbDensity plot of simulated doublets:
+
+- The vertical bar is the detectable doublet fraction.
+- The left panel is showing cells that are Embbedded doublets.
+- The right panel is showing cells that are Neotypic doubles.
+
+For DoubletScoreUMAP:
+
+- The left panel is showing indentified doublets in data set (black dots are identified doublets, which is missing in my data set, can take a look in example pipeline given at the begining of this doc).
+- The right panel is showing doublet score of cells, in my case, there is no doublets but the cells are still colored, my data doublet score cutoff is 0.68.
+
+
+
+
 
 
 
