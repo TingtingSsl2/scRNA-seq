@@ -8,6 +8,19 @@ To identify doublets from scRNA-seq data set, I followed the python pipeline pos
 - Run python scripts from termnial.
 - Srublet output includes: on-screen printing results as mentioned in Srublet paper, two figures and two tables (one for doublet score, one binary file telling if a cell is doublet or not).
 
+## Srublet paper overview and algorithm:
+![SrubletPaper](SrubletPaper.jpg)
+
+**Notes**
+- Srublet paper defined two types of doublets: neotypic doublets and embedded doublets.
+- Neotypic doublets are hypothesized to have two cells with distinct transcriptomes captured in one gem. Neotypic doublets are distinguishable from singlets. Figure A B.
+- Embedded doublets are hypothesized to have two similar cells with similar transcriptomes captured in one gem. Embedded doublets are indistinguishable from singlets. Figure A B.
+- Observed transcriptomes are cells in a data set, which containing singlets, embedded doublets and neotypic doublets. 
+- Algorithm: doublets are simulated by randomly sampling and combining observed transcriptomes, and the local density of simulated doublets, as measured by a nearest neighbor graph, is used to calculate a doublet score for each observed transcriptome. 
+- Srublet involves two steps. First, doublets (multiplets of just two cells) are simulated from the data by combining random pairs of observed transcriptomes. Second, each observed transcriptome is scored based on the relative densities of simulated doublets and observed transcriptomes in its vicinity. 
+
+
+
 ## Codes:
 ```
 python
