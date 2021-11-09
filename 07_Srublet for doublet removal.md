@@ -116,6 +116,10 @@ For DoubletScoreUMAP:
 - The left panel is showing indentified doublets in data set (black dots are identified doublets, which is missing in my data set, can take a look in example pipeline given at the begining of this doc).
 - The right panel is showing doublet score of cells, in my case, there is no doublets but the cells are still colored, my data doublet score cutoff is 0.68.
 
+**Conclusion**
+
+Our data set has only embedded doublets, no detectable neotypic doublets.
+
 
 
 
