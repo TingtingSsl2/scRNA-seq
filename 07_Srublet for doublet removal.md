@@ -13,8 +13,6 @@ To identify doublets from scRNA-seq data set, I followed the python pipeline pos
   <img width="50%" height="50%" src="SrubletPaper.jpg">
 </p>
 
-![SrubletPaper](SrubletPaper.jpg)
-
 **Notes**
 - Srublet paper defined two types of doublets: neotypic doublets and embedded doublets.
 - Neotypic doublets are hypothesized to have two cells with distinct transcriptomes captured in one gem. Neotypic doublets are distinguishable from singlets. Figure A B.
