@@ -9,7 +9,7 @@
 
 ## Codes
 ```
-# df is the original seurat object that has gone through clustering, I'm interested to clusters 0-5 and 9, hypothetical neuron cells for re-clustering
+# df is the original seurat object that has gone through clustering, I'm interested to clusters 0-5 and 9, hypothetical neuron cells, for re-clustering
 df_sub <- subset(df, idents = c(0, 1, 2, 3, 4, 5, 9))
 
 # find out top 2000 variable genes
