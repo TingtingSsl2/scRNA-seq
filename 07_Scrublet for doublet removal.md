@@ -1,29 +1,29 @@
 # Scrublet for scRNA-seq doublet removing
 
-Here is Srublet Github page: [Srublet Github](https://github.com/swolock/scrublet)
+Here is Scrublet Github page: [Scrublet Github](https://github.com/swolock/scrublet)
 
-Srublet analysis example can be found: [Srublet Example](https://github.com/swolock/scrublet/blob/master/examples/scrublet_basics.ipynb)
+Scrublet analysis example can be found: [Scrublet Example](https://github.com/swolock/scrublet/blob/master/examples/scrublet_basics.ipynb)
 
-Srublet analysis discussion can be found: [Srublet Discussion](https://github.com/swolock/scrublet/issues/3)
+Scrublet analysis discussion can be found: [Scrublet Discussion](https://github.com/swolock/scrublet/issues/3)
 
-To identify doublets from scRNA-seq data set, I followed the python pipeline posted on Srublet Github and did a few modifications. 
+To identify doublets from scRNA-seq data set, I followed the python pipeline posted on Scrublet Github and did a few modifications. 
 
-- Filtered matrix from cellranger output was used as Srublet input.
+- Filtered matrix from cellranger output was used as Scrublet input.
 - Run python scripts from termnial.
-- Srublet output includes: on-screen printing results as mentioned in Srublet paper, two figures and two tables (one for doublet score, one binary file telling if a cell is doublet or not).
+- Scrublet output includes: on-screen printing results as mentioned in Scrublet paper, two figures and two tables (one for doublet score, one binary file telling if a cell is doublet or not).
 
-## Srublet paper overview and the algorithm:
+## Scrublet paper overview and the algorithm:
 <p align="center">
-  <img width="75%" height="75%" src="SrubletPaper.jpg">
+  <img width="75%" height="75%" src="ScrubletPaper.jpg">
 </p>
 
 **Notes**
-- Srublet paper defined two types of doublets: neotypic doublets and embedded doublets.
+- Scrublet paper defined two types of doublets: neotypic doublets and embedded doublets.
 - Neotypic doublets are hypothesized to have two cells with distinct transcriptomes captured in one gem. Neotypic doublets are distinguishable from singlets. Figure A B.
 - Embedded doublets are hypothesized to have two similar cells with similar transcriptomes captured in one gem. Embedded doublets are indistinguishable from singlets. Figure A B.
 - Observed transcriptomes are cells in a data set, which containing singlets, embedded doublets and neotypic doublets. 
 - Algorithm: doublets are simulated by randomly sampling and combining observed transcriptomes, and the local density of simulated doublets, as measured by a nearest neighbor graph, is used to calculate a doublet score for each observed transcriptome. 
-- Srublet involves two steps. First, doublets (multiplets of just two cells) are simulated from the data by combining random pairs of observed transcriptomes. Second, each observed transcriptome is scored based on the relative densities of simulated doublets and observed transcriptomes in its vicinity. 
+- Scrublet involves two steps. First, doublets (multiplets of just two cells) are simulated from the data by combining random pairs of observed transcriptomes. Second, each observed transcriptome is scored based on the relative densities of simulated doublets and observed transcriptomes in its vicinity. 
 
 
 
@@ -72,15 +72,15 @@ plt.savefig("DoubletScoreUMAP.png")
 np.savetxt("srublet.score", doublet_scores)
 np.savetxt("srublet.logic", predicted_doublets)
 ```
-## Intepretation of the Srublet results
+## Intepretation of the Scrublet results
 
-**The output described in Srublet paper includes:**
+**The output described in Scrublet paper includes:**
 - A predicted ‘‘detectable doublet fraction’’. This is the predicted fraction of doublets that are neotypic.
 - A ‘‘doublet score’’ for each observed transcriptome. This score is used for doublet classification, and it can also be interpreted as a posterior likelihood of a cell being a doublet when the fraction of doublets in the entire dataset is known.
 - A standard error on the doublet score. This error allows establishing confidence in the assignment of cells as doublets.
 - A binary label for each cell identifying neotypic doublets.
 
-**The output prited on screen while running Srublet:**
+**The output prited on screen while running Scrublet:**
 
 - Preprocessing...
 - Simulating doublets...
