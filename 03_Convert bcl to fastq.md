@@ -83,7 +83,7 @@ For example, The default value of 0.9 (--adapter-stringency) indicates that only
 - for any FASTQ file in the input, reads with > 90% sequence identity with the Adapter are trimmed. Sequenced Adapter sequences are modified to expected Adapter sequences.
 ***
 
-**Codes:**
+## Codes on ERISONE ##
 ```
 module load cellranger/3.0.2
 module load bcl2fastq2/2.19.1
