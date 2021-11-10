@@ -19,7 +19,7 @@ The software uses input files, which are the output of a sequencing run, to conv
 The sample FASTQ files are compressed and appended with the *fastq.gz extension. Thus, per-cycle BCL files are converted into per-read FASTQ files that can be used as input for data analysis.
 
 
-## Demultiplexing Process
+## Demultiplexing
 
 Multiplexing adds a unique index adapter sequence to each sample during library prep, generating uniquely tagged libraries that can be identified and sorted for analysis. Demultiplexing then assigns clusters to a sample based on the index adapter sequence of the cluster.
 - To optimize demultiplexing results, choose index adapters that optimize color balance when performing library prep. For more information, see the Index Adapters Pooling Guide.
@@ -37,7 +37,6 @@ Depending on settings, the bcl2fastq2 Conversion Software trims adapter sequence
 - How does the fastq file look like after bcl conversion?
 [sequence construct](http://nextgen.mgh.harvard.edu/CustomPrimer.html)
 
-## Notes
 **Input file:** after downloading bcl files from Illumina Basespace, a series of files will be included in the downloaded file. One of them is **SampleSheet.csv**. Other files included are (based on different sequencing platforms, various file formats will be included, check on [bcl2fastq mannual](https://sapac.support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/bcl2fastq/bcl2fastq2-v2-20-software-guide-15051736-03.pdf)):
 
 **Output of NextSeq 550:**
