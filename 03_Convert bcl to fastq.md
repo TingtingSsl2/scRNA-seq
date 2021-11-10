@@ -46,7 +46,10 @@ Depending on settings, the bcl2fastq2 Conversion Software trims adapter sequence
 **Input file:** after downloading bcl files from Illumina Basespace, a series of files will be included in the downloaded file. One of them is **SampleSheet.csv**. Other files included are (based on different sequencing platforms, various file formats will be included, check on [bcl2fastq mannual](https://sapac.support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/bcl2fastq/bcl2fastq2-v2-20-software-guide-15051736-03.pdf)):
 
 **Output of NextSeq 550:**
-![example2](OutputFilesFromSequencing.png)
+
+<p align="center">
+  <img width="75%" height="75%" src="OutputFilesFromSequencing.png">
+</p>
 
 
 **Sample Sheets:**
