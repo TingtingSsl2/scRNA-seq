@@ -11,8 +11,10 @@
 ```
 # df is the original seurat object that has gone through clustering, I'm interested to clusters 0-5 and 9, hypothetical neuron cells for re-clustering
 df_sub <- subset(df, idents = c(0, 1, 2, 3, 4, 5, 9))
+
 # find out top 2000 variable genes
 df_sub <- FindVariableFeatures(df_sub, selection.method = "vst", nfeatures = 2000)
+
 # ScaleData by default will scale only 2000 variable genes, if using parameter features = all.gene, all genes will be scaled for heatmap visualization purpose, but still only 2000 variable genes will be used in the following RunPCA. 
 all.genes <- rownames(df_sub)
 df_sub <- ScaleData(df_sub, features = all.genes, verbose = FALSE)
