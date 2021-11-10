@@ -74,7 +74,7 @@ The software writes compressed, demultiplexed FASTQ files to the directory <run 
 For example, The default value of 0.9 (--adapter-stringency) indicates that only reads with > 90% sequence identity with the adapter are trimmed.
 
 ***
-**Summary**
+## Summary ##
 
 - cellranger mkfastq or bcl2fastq converts bcl file into FASTQ file. 
 - after conversion, FASTQ files will be splitted/assigned into two parts: sample FASTQ and undetermined FASTQ.
