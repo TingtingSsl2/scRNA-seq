@@ -14,7 +14,7 @@ To identify doublets from scRNA-seq data set, I followed the python pipeline pos
 
 ## Scrublet paper overview and the algorithm:
 <p align="center">
-  <img width="75%" height="75%" src="ScrubletPaper.jpg">
+  <img width="75%" height="75%" src="SrubletPaper.jpg">
 </p>
 
 **Notes**
