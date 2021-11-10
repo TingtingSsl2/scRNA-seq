@@ -13,7 +13,7 @@ Below is showing a **Ranked Barcode Plot**, obtained after running 10X Genomics 
 
 - Barcodes can be determined to be cell-associated based on their UMI count or by their RNA-profile. In other words, if there is enough UMI counts or RNAs associated with the barcode, this barcode is cell-associated. 
 
-# How to interpret the "Fraction Reads in Cells" metric?
+## How to interpret the "Fraction Reads in Cells" metric?
 [How to interpret the "Fraction Reads in Cells" metric?](https://kb.10xgenomics.com/hc/en-us/articles/360003919491-How-to-interpret-the-Fraction-Reads-in-Cells-metric-)
 [Gene Expression Algorithms Overview](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/algorithms/overview)
 
