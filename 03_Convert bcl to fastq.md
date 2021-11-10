@@ -37,7 +37,7 @@ Depending on settings, the bcl2fastq2 Conversion Software trims adapter sequence
 - How does the fastq file look like after bcl conversion?
 [sequence construct](http://nextgen.mgh.harvard.edu/CustomPrimer.html)
 
-## Commands on ERISOne:
+## Notes
 **Input file:** after downloading bcl files from Illumina Basespace, a series of files will be included in the downloaded file. One of them is **SampleSheet.csv**. Other files included are (based on different sequencing platforms, various file formats will be included, check on [bcl2fastq mannual](https://sapac.support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/bcl2fastq/bcl2fastq2-v2-20-software-guide-15051736-03.pdf)):
 
 **Output of NextSeq 550:**
@@ -50,7 +50,7 @@ Depending on settings, the bcl2fastq2 Conversion Software trims adapter sequence
 **Sample Sheets:**
 A sample sheet (SampleSheet.csv) records information about samples and the corresponding index adapters. The bcl2fastq2 Conversion Software uses this information to demultiplex and convert BCL files. For most runs, a sample sheet is optional. The default location is the root output folder, but you can use the command `--sample-sheet` (bcl2fastq2, use `--csv=` to specify if using cellranger mkfastq) to specify any CSV file in any location. When a sample sheet is not provided, the software assigns all reads to the default sample Undertermined_S0.
 
-**DemultiplexingScenarios**
+**Demultiplexing Scenarios**
 
 For each sample listed in a sample sheet, the software produces one FASTQ file for each sample for each read.
 - When a sample sheet contains multiplexed samples, the software:
@@ -62,7 +62,7 @@ For each sample listed in a sample sheet, the software produces one FASTQ file f
 
 --adapter-stringency: The default value of 0.9 indicates that only reads with > 90% sequence identity with the adapter are trimmed.
 
-**FASTQ FilesDirectory**
+**FASTQ Files Directory**
 
 The software writes compressed, demultiplexed FASTQ files to the directory <run folder>\Data\Intensities\BaseCalls.
 - If a sample sheet specifies the Sample_Project column for a sample, the software places the FASTQ files for that sample in the directory <run folder>\Data\Intensities\BaseCalls\<Project>. The same project directory contains the files for multiple samples.
