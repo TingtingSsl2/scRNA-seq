@@ -4,12 +4,9 @@ snRNA-seq data is saved in bcl format, to convert it into fastq file format, two
 
 The conversion command is `cellranger mkfastq`. The FASTQ output generated will be the same as when running bcl2fastq directly. Cited from here: [cellranger mkfastq and bcl2fastq2](https://janis.readthedocs.io/en/latest/tools/bioinformatics/cellranger/cellrangermkfastq.html)
 
-***
 **Questions before I start:**
 
 - How are Undetermined fastq files determined?
-***
-
 
 ## How does bcl2fastq2 work?
 Reference: [bcl2fastq mannual](https://sapac.support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/bcl2fastq/bcl2fastq2-v2-20-software-guide-15051736-03.pdf)
@@ -35,12 +32,10 @@ Depending on settings, the bcl2fastq2 Conversion Software trims adapter sequence
 - Adapter trimming—The software determines whether a read extends past the DNA insert and into the sequencing adapter. An approximate string matching algorithm identifies all or part of the adapter sequence and treats inserts and deletions (indels) as one mismatch. **Base calls matching the adapter sequence and beyond are masked or removed from the FASTQ file.**
 - UMI removal—UMIs are random k-mers attached to the genomic DNA (gDNA) before polymerase chain reaction (PCR) amplification. After the UMI is amplified with amplicons, the software can retrieve the bases and include them in the read name in the FASTQ files. When the TrimUMI sample sheet setting is active, the software can also remove the bases from the reads.
 
-***
 **To think:**
 
 - How does the fastq file look like after bcl conversion?
 [sequence construct](http://nextgen.mgh.harvard.edu/CustomPrimer.html)
-***
 
 ## Commands on ERISOne:
 **Input file:** after downloading bcl files from Illumina Basespace, a series of files will be included in the downloaded file. One of them is **SampleSheet.csv**. Other files included are (based on different sequencing platforms, various file formats will be included, check on [bcl2fastq mannual](https://sapac.support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/bcl2fastq/bcl2fastq2-v2-20-software-guide-15051736-03.pdf)):
