@@ -1,5 +1,7 @@
 # Monocle 3 for trajectory analysis on scRNA-seq data
 
+Monocle orders single-cell expression profiles in ‘pseudotime’—a quantitative measure of progress through a biological process.
+
 Monocle 3 orders cells by their progress through differentiation rather than by the time they were collected.
 
 ## Monocle 3 related papers
