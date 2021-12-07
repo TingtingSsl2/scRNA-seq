@@ -4,7 +4,7 @@ Monocle orders single-cell expression profiles in ‘pseudotime’—a quantitat
 
 Monocle 3 orders cells by their progress through differentiation rather than by the time they were collected.
 
-## Monocle 3 related papers
+## Monocle related papers
 
 The concept of pseudotime ordering for single-cell analysis: [Monocle pseudotime](http://cole-trapnell-lab.github.io/pdfs/papers/trapnell-cacchiarelli-monocle.pdf)
 
