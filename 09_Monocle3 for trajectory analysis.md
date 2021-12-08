@@ -4,7 +4,7 @@
 Trajectory inference methods interpret single-cell data as a snapshot of a continuous process. This process is reconstructed by finding paths through cellular space that minimize transcriptional changes between neighbouring cells. The ordering of cells along these paths is described by a pseudotime variable. While this variable is related to transcriptional distances from a root cell, it is often inter- preted as a proxy for developmental time. [Current best practices in single-cell RNA-seq analysis: a tutorial](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6582955/pdf/MSB-15-e8746.pdf)
 
 <p align="center">
-  <img width="75%" height="75%" src="TI_bestPractice.jpg">
+  <img width="70%" height="70%" src="TI_bestPractice.jpg">
 </p>
 
 Figure 7. Trajectory analysis and graph abstraction of mouse intestinal epithelium data from Haber et al (2017).
@@ -31,7 +31,7 @@ The single-cell transcriptional landscape of mammalian organogenesis: [Monocle 3
 - Finally, Monocle uses this sequence to produce a ‘trajectory’ of an individual cell’s progress through differentiation.
 
 <p align="center">
-  <img width="50%" height="50%" src="Monocle_algorithmm.jpg">
+  <img width="60%" height="60%" src="Monocle_algorithmm.jpg">
 </p>
 
 ## Minimum spanning tree (MST)
