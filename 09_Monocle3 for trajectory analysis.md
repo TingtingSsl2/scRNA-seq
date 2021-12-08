@@ -31,7 +31,7 @@ The single-cell transcriptional landscape of mammalian organogenesis: [Monocle 3
 - Finally, Monocle uses this sequence to produce a ‘trajectory’ of an individual cell’s progress through differentiation.
 
 <p align="center">
-  <img width="75%" height="75%" src="Monocle_algorithm.jpg">
+  <img width="75%" height="75%" src="Monocle_algorithmm.jpg">
 </p>
 
 ## Minimum spanning tree (MST)
