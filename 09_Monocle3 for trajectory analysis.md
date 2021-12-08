@@ -27,6 +27,10 @@ The single-cell transcriptional landscape of mammalian organogenesis: [Monocle 3
 - Fourth, the algorithm finds the longest path through the MST, corresponding to the long- est sequence of transcriptionally similar cells. 
 - Finally, Monocle uses this sequence to produce a ‘trajectory’ of an individual cell’s progress through differentiation.
 
+<p align="center">
+  <img width="75%" height="75%" src="Monocle_algorithm.webp">
+</p>
+
 ## Minimum spanning tree (MST)
 A minimum spanning tree (MST) or minimum weight spanning tree is a subset of the edges of a connected, edge-weighted undirected graph that connects all the vertices together, without any cycles and with the minimum possible total edge weight. That is, it is a spanning tree whose sum of edge weights is as small as possible. More generally, any edge-weighted undirected graph (not necessarily connected) has a minimum spanning forest, which is a union of the minimum spanning trees for its connected components.
 
