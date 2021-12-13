@@ -10,6 +10,10 @@ Trajectory inference methods interpret single-cell data as a snapshot of a conti
 Figure 7. Trajectory analysis and graph abstraction of mouse intestinal epithelium data from Haber et al (2017).
 (A) Distal and proximal enterocyte differentiation trajectories inferred by Slingshot. The Distal lineage is shown coloured by pseudotime from red to blue. Other cells in the dataset are grey. (B) Slingshot trajectories over clusters in PCA space. Clusters are abbreviated as follows: EP—enterocyte progenitors; Imm. Ent.—immature enterocytes; Mat. Ent.—mature enterocytes; Prox.—proximal; Dist.—distal. (C) Density over pseudotime for the distal enterocyte trajectory from Fig 7A. Colours represent the dominant cluster labels in each pseudotime bin. (D) Abstracted graph representation of the dataset projected onto a UMAP representation. Clusters are shown as coloured nodes. Clusters that appear in other trajectories are labelled for comparison. “TA” denotes transit amplifying cells. (E) Gene expression dynamics over pseudotime in a general enterocyte trajectory using the “GAM” R library.
 
+## Comparision of trajectory methods
+A comparison of single-cell trajectory inference methods. (https://www-nature-com.ezp-prod1.hul.harvard.edu/articles/s41587-019-0071-9.pdf)
+
+
 ## What does Monocle do?
 Monocle orders single-cell expression profiles in ‘pseudotime’—a quantitative measure of progress through a biological process. (Monocle 3 orders cells by their progress through differentiation rather than by the time they were collected.)
 
