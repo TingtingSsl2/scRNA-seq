@@ -49,3 +49,10 @@ As cells progress along a differentiation trajectory, they may diverge along two
 - Pseudotime is an abstract unit of progress: it's simply the distance between a cell and the start of the trajectory, measured along the shortest path. 
 - The trajectory's total length is defined in terms of the total amount of transcriptional change that a cell undergoes as it moves from the starting state to the end state.
 
+## The ordering workflow of Monocle
+- Step 1: choosing genes that define progress
+- Step 2: reducing the dimensionality of the data
+- Step 3: ordering the cells in pseudotime
+
+With the expression data projected into a lower dimensional space, Monocle is ready to learn the trajectory that describes how cells transition from one state into another. Monocle assumes that the trajectory has a tree structure, with one end of it the "root", and the others the "leaves". Monocle's job is to fit the best tree it can to the data. This task is called manifold learning A cell at the beginning of the biological process starts at the root and progresses along the trunk until it reaches the first branch, if there is one. That cell must then choose a path, and moves further and further along the tree until it reaches a leaf. **A cell's pseudotime value is the distance it would have to travel to get back to the root.**
+
