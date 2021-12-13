@@ -11,8 +11,15 @@ Figure 7. Trajectory analysis and graph abstraction of mouse intestinal epitheli
 (A) Distal and proximal enterocyte differentiation trajectories inferred by Slingshot. The Distal lineage is shown coloured by pseudotime from red to blue. Other cells in the dataset are grey. (B) Slingshot trajectories over clusters in PCA space. Clusters are abbreviated as follows: EP—enterocyte progenitors; Imm. Ent.—immature enterocytes; Mat. Ent.—mature enterocytes; Prox.—proximal; Dist.—distal. (C) Density over pseudotime for the distal enterocyte trajectory from Fig 7A. Colours represent the dominant cluster labels in each pseudotime bin. (D) Abstracted graph representation of the dataset projected onto a UMAP representation. Clusters are shown as coloured nodes. Clusters that appear in other trajectories are labelled for comparison. “TA” denotes transit amplifying cells. (E) Gene expression dynamics over pseudotime in a general enterocyte trajectory using the “GAM” R library.
 
 ## Comparision of trajectory methods
-A comparison of single-cell trajectory inference methods. (https://www-nature-com.ezp-prod1.hul.harvard.edu/articles/s41587-019-0071-9.pdf)
+[A comparison of single-cell trajectory inference methods.] (https://www-nature-com.ezp-prod1.hul.harvard.edu/articles/s41587-019-0071-9.pdf)
 
+Overall, we found a large diversity across the four evaluation criteria, with only a few methods, such as PAGA, Slingshot and SCORPIUS, performing well across the board.
+
+[Current best practices in single-cell RNA-seq analysis: a tutorial](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6582955/pdf/MSB-15-e8746.pdf)
+
+- The comparison revealed that Slingshot (Street et al, 2018) outperformed other methods for simple trajectories that range from linear to bi- and multifurcating models. 
+- If more complex trajectories are expected, PAGA (Wolf et al, 2019) was recommended by the authors. 
+- Generally, any inferred trajectory should be confirmed with an alternative method to avoid method bias.
 
 ## What does Monocle do?
 Monocle orders single-cell expression profiles in ‘pseudotime’—a quantitative measure of progress through a biological process. (Monocle 3 orders cells by their progress through differentiation rather than by the time they were collected.)
