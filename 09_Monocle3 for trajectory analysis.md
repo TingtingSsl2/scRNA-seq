@@ -15,7 +15,7 @@ Monocle orders single-cell expression profiles in ‘pseudotime’—a quantitat
 
 ## Monocle related papers
 
-The concept of pseudotime ordering for single-cell analysis: [Monocle](http://cole-trapnell-lab.github.io/pdfs/papers/trapnell-cacchiarelli-monocle.pdf)
+The concept of pseudotime ordering for single-cell analysis (pseudotemporal ordering): [Monocle](http://cole-trapnell-lab.github.io/pdfs/papers/trapnell-cacchiarelli-monocle.pdf)
 
 The  use of Reversed Graph Embedding for single-cell analysis: [Monocle 2](http://cole-trapnell-lab.github.io/pdfs/papers/qiu-monocle2.pdf)
 
