@@ -22,11 +22,11 @@ The  use of Reversed Graph Embedding for single-cell analysis: [Monocle 2](http:
 The single-cell transcriptional landscape of mammalian organogenesis: [Monocle 3](https://cole-trapnell-lab.github.io/pdfs/papers/cao-spielmann-mouse-emb.pdf)
 
 ## Algorithm of Monocle 3
-- First the algorithm represents the expression profile of each cell as a point in a high-dimensional Euclidean space, with one dimension for each gene. 
-- Second, it reduces the dimensionality of this space using independent component analysis17. Dimensionality reduction transforms the cell data from a high-dimensional space into a low-dimensional one that preserves essential relationships between cell populations but is much easier to visualize and interpret18. 
-- Third, Monocle constructs a minimum spanning tree (MST) on the cells, a previously developed approach now commonly used in other single- cell settings, such as flow or mass cytometry1,13. 
-- Fourth, the algorithm finds the longest path through the MST, corresponding to the long- est sequence of transcriptionally similar cells. 
-- Finally, Monocle uses this sequence to produce a ‘trajectory’ of an individual cell’s progress through differentiation.
+- **First** the algorithm represents the expression profile of each cell as a point in a high-dimensional Euclidean space, with one dimension for each gene. 
+- **Second**, it reduces the dimensionality of this space using independent component analysis17. Dimensionality reduction transforms the cell data from a high-dimensional space into a low-dimensional one that preserves essential relationships between cell populations but is much easier to visualize and interpret18. 
+- **Third**, Monocle constructs a minimum spanning tree (MST) on the cells, a previously developed approach now commonly used in other single- cell settings, such as flow or mass cytometry1,13. 
+- **Fourth**, the algorithm finds the longest path through the MST, corresponding to the long- est sequence of transcriptionally similar cells. 
+- **Finally**, Monocle uses this sequence to produce a ‘trajectory’ of an individual cell’s progress through differentiation.
 
 <p align="center">
   <img width="60%" height="60%" src="Monocle_algorithmm.jpg">
