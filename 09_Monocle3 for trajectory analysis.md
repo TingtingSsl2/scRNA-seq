@@ -28,6 +28,25 @@ Monocle orders single-cell expression profiles in ‘pseudotime’—a quantitat
 - The  use of **Reversed Graph Embedding** for single-cell analysis: [Monocle 2](http://cole-trapnell-lab.github.io/pdfs/papers/qiu-monocle2.pdf)
 - The single-cell transcriptional landscape of mammalian organogenesis: [Monocle 3](https://cole-trapnell-lab.github.io/pdfs/papers/cao-spielmann-mouse-emb.pdf)
 
+## Trajectory and subtrajectories 
+As cells progress along a differentiation trajectory, they may diverge along two or more separate paths. After Monocle finds the longest sequence of similar cells, it examines cells not along this path to find alternative trajectories through the MST. It orders these subtrajectories and connects them to the main trajectory, and annotates each cell with both a trajectory and a pseudotime value. Monocle thus orders cells by progress through differentiation and can reconstruct branched biological processes, which might arise when a precursor cell makes cell fate decisions that govern the generation of multiple subsequent lineages. Importantly, Monocle is unsupervised and needs no prior knowledge of specific genes that distinguish cell fates, and is thus suitable for studying a wide array of dynamic biological processes.
+
+## What is pseudotime? 
+
+[pseudotime](http://cole-trapnell-lab.github.io/monocle-release/docs/#constructing-single-cell-trajectories)
+
+- Pseudotime is a measure of how much progress an individual cell has made through a process such as cell differentiation. In many biological processes, cells do not progress in perfect synchrony. In single-cell expression studies of processes such as cell differentiation, captured cells might be widely distributed in terms of progress. That is, in a population of cells captured at exactly the same time, some cells might be far along, while others might not yet even have begun the process. This asynchrony creates major problems when you want to understand the sequence of regulatory changes that occur as cells transition from one state to the next. Tracking the expression across cells captured at the same time produces a very compressed sense of a gene's kinetics, and the apparent variability of that gene's expression will be very high. By ordering each cell according to its progress along a learned trajectory, Monocle alleviates the problems that arise due to asynchrony. 
+- Instead of tracking changes in **expression** as a function of time, Monocle tracks changes as a function of **progress** along the trajectory, which we term ''pseudotime''. 
+- Pseudotime is an abstract unit of progress: it's simply the distance between a cell and the start of the trajectory, measured along the shortest path. 
+- The trajectory's total length is defined in terms of the total amount of transcriptional change that a cell undergoes as it moves from the starting state to the end state.
+
+## The ordering workflow of Monocle
+- Step 1: choosing genes that define progress
+- Step 2: reducing the dimensionality of the data
+- Step 3: ordering the cells in pseudotime
+
+With the expression data projected into a lower dimensional space, Monocle is ready to learn the trajectory that describes how cells transition from one state into another. Monocle assumes that the trajectory has a tree structure, with one end of it the "root", and the others the "leaves". Monocle's job is to fit the best tree it can to the data. This task is called manifold learning A cell at the beginning of the biological process starts at the root and progresses along the trunk until it reaches the first branch, if there is one. That cell must then choose a path, and moves further and further along the tree until it reaches a leaf. **A cell's pseudotime value is the distance it would have to travel to get back to the root.**
+
 ## Algorithm of Monocle
 - **First**, the algorithm represents the expression profile of each cell as a point in a high-dimensional Euclidean space, with one dimension for each gene. 
 - **Second**, it reduces the dimensionality of this space using independent component analysis17. Dimensionality reduction transforms the cell data from a high-dimensional space into a low-dimensional one that preserves essential relationships between cell populations but is much easier to visualize and interpret18. 
@@ -55,23 +74,4 @@ is automatically assigned based on the principal graph.
 
 ## Algorithm of Monocle 3
 Monocle 3 first projects cells onto a low-dimensional space encoding transcriptional state using UMAP. It then groups mutually similar cells using the Louvain community detection algorithm, and merges adjacent groups into ‘supergroups’. Finally, it resolves the paths or trajectories that individual cells can take during development, identifying the locations of branches and convergences within each supergroup.
-
-## Trajectory and subtrajectories 
-As cells progress along a differentiation trajectory, they may diverge along two or more separate paths. After Monocle finds the longest sequence of similar cells, it examines cells not along this path to find alternative trajectories through the MST. It orders these subtrajectories and connects them to the main trajectory, and annotates each cell with both a trajectory and a pseudotime value. Monocle thus orders cells by progress through differentiation and can reconstruct branched biological processes, which might arise when a precursor cell makes cell fate decisions that govern the generation of multiple subsequent lineages. Importantly, Monocle is unsupervised and needs no prior knowledge of specific genes that distinguish cell fates, and is thus suitable for studying a wide array of dynamic biological processes.
-
-## What is pseudotime? 
-
-[pseudotime](http://cole-trapnell-lab.github.io/monocle-release/docs/#constructing-single-cell-trajectories)
-
-- Pseudotime is a measure of how much progress an individual cell has made through a process such as cell differentiation. In many biological processes, cells do not progress in perfect synchrony. In single-cell expression studies of processes such as cell differentiation, captured cells might be widely distributed in terms of progress. That is, in a population of cells captured at exactly the same time, some cells might be far along, while others might not yet even have begun the process. This asynchrony creates major problems when you want to understand the sequence of regulatory changes that occur as cells transition from one state to the next. Tracking the expression across cells captured at the same time produces a very compressed sense of a gene's kinetics, and the apparent variability of that gene's expression will be very high. By ordering each cell according to its progress along a learned trajectory, Monocle alleviates the problems that arise due to asynchrony. 
-- Instead of tracking changes in **expression** as a function of time, Monocle tracks changes as a function of **progress** along the trajectory, which we term ''pseudotime''. 
-- Pseudotime is an abstract unit of progress: it's simply the distance between a cell and the start of the trajectory, measured along the shortest path. 
-- The trajectory's total length is defined in terms of the total amount of transcriptional change that a cell undergoes as it moves from the starting state to the end state.
-
-## The ordering workflow of Monocle
-- Step 1: choosing genes that define progress
-- Step 2: reducing the dimensionality of the data
-- Step 3: ordering the cells in pseudotime
-
-With the expression data projected into a lower dimensional space, Monocle is ready to learn the trajectory that describes how cells transition from one state into another. Monocle assumes that the trajectory has a tree structure, with one end of it the "root", and the others the "leaves". Monocle's job is to fit the best tree it can to the data. This task is called manifold learning A cell at the beginning of the biological process starts at the root and progresses along the trunk until it reaches the first branch, if there is one. That cell must then choose a path, and moves further and further along the tree until it reaches a leaf. **A cell's pseudotime value is the distance it would have to travel to get back to the root.**
 
