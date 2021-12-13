@@ -15,11 +15,9 @@ Monocle orders single-cell expression profiles in ‘pseudotime’—a quantitat
 
 ## Monocle related papers
 
-The concept of pseudotime ordering for single-cell analysis (**pseudotemporal ordering**): [Monocle](http://cole-trapnell-lab.github.io/pdfs/papers/trapnell-cacchiarelli-monocle.pdf)
-
-The  use of **Reversed Graph Embedding** for single-cell analysis: [Monocle 2](http://cole-trapnell-lab.github.io/pdfs/papers/qiu-monocle2.pdf)
-
-The single-cell transcriptional landscape of mammalian organogenesis: [Monocle 3](https://cole-trapnell-lab.github.io/pdfs/papers/cao-spielmann-mouse-emb.pdf)
+- The concept of pseudotime ordering for single-cell analysis (**pseudotemporal ordering**): [Monocle](http://cole-trapnell-lab.github.io/pdfs/papers/trapnell-cacchiarelli-monocle.pdf)
+- The  use of **Reversed Graph Embedding** for single-cell analysis: [Monocle 2](http://cole-trapnell-lab.github.io/pdfs/papers/qiu-monocle2.pdf)
+- The single-cell transcriptional landscape of mammalian organogenesis: [Monocle 3](https://cole-trapnell-lab.github.io/pdfs/papers/cao-spielmann-mouse-emb.pdf)
 
 ## Algorithm of Monocle 3
 - **First**, the algorithm represents the expression profile of each cell as a point in a high-dimensional Euclidean space, with one dimension for each gene. 
