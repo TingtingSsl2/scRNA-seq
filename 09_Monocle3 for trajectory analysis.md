@@ -12,7 +12,7 @@ Figure 7. Trajectory analysis and graph abstraction of mouse intestinal epitheli
 
 ## Comparision of trajectory methods
 [A comparison of single-cell trajectory inference methods.](https://www-nature-com.ezp-prod1.hul.harvard.edu/articles/s41587-019-0071-9.pdf)
-- Overall, we found a large diversity across the four evaluation criteria, with only a few methods, such as PAGA, Slingshot and SCORPIUS, performing well across the board.
+- Overall, we found a large diversity across the four evaluation criteria, with only a few methods, such as **PAGA**, **Slingshot** and **SCORPIUS**, performing well across the board.
 
 [Current best practices in single-cell RNA-seq analysis: a tutorial](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6582955/pdf/MSB-15-e8746.pdf)
 - The comparison revealed that Slingshot (Street et al, 2018) outperformed other methods for simple trajectories that range from linear to bi- and multifurcating models. 
