@@ -5,7 +5,7 @@ https://www.reddit.com/r/bioinformatics/comments/n3ltnf/cellranger_aggr_vs_seura
 - input is raw count matrix
 - Chemistry Batch Correction (different versions of kit reagents)
 - algorithm is based on mutual nearest neighbors (MNN)
-- mapped (default): For each library type, subsample reads from higher-depth GEM wells until they all have, on average, an equal number of reads per cell that are confidently mapped to the transcriptome (Gene Expression) or assigned to known features (Feature Barcode Technology). Can set to none. 
+- mapped (default): for each library type, subsample reads from higher-depth GEM wells until they all have, on average, an equal number of reads per cell that are confidently mapped to the transcriptome (Gene Expression) or assigned to known features (Feature Barcode Technology). Can set to none. 
 
 ## Seurat merge
 - merged raw count matrix. merges the raw count matrices of two Seurat objects and creates a new Seurat object with the resulting combined raw count matrix. 
